@@ -26,20 +26,6 @@
 \addplot+[ycomb,
          mark=.,
          ultra thick,
-         diplom2,
-         forget plot
-        ]
-        table[
-        x expr = \thisrowno{0},
-        y expr = \thisrowno{1}
-        ]
-        {../data/ico_reinNe.dat};
-        \addlegendimage{line legend, diplom2, very thick};
-        \addlegendentry{ico};
- 
-\addplot+[ycomb,
-         mark=.,
-         ultra thick,
          diplom1,
          forget plot
         ]
@@ -51,6 +37,20 @@
         \addlegendimage{line legend, diplom1, very thick};
         \addlegendentry{fcc};
 
+\addplot+[ycomb,
+         mark=.,
+         ultra thick,
+         diplom2,
+         forget plot
+        ]
+        table[
+        x expr = \thisrowno{0},
+        y expr = \thisrowno{1}
+        ]
+        {../data/ico_reinNe.dat};
+        \addlegendimage{line legend, diplom2, very thick};
+        \addlegendentry{ico};
+ 
 %\addplot[
 %         mark=none,
 %         diplom2,

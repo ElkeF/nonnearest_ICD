@@ -34,16 +34,20 @@
         y expr = \thisrowno{1}/2
         ]
         {../data/model.dat};
-        \addlegendimage{line legend, diplom2, very thick};
-        \addlegendentry{model};
+%        \addlegendimage{line legend, diplom2, very thick};
+%        \addlegendentry{model};
 
 \draw[<->,black,very thick,dashed] (axis cs:0.7501,0.0002)
       -- (axis cs:1.9501,0.0002)
       node[midway,above]{1.20};
 
-\draw[<->,black,very thick,dashed] (axis cs:1.9501,0.00005)
-      -- (axis cs:2.6701,0.00005)
+\draw[<->,black,very thick,dashed] (axis cs:1.9501,0.0002)
+      -- (axis cs:2.6701,0.00020)
       node[midway,above]{0.68};
+
+\draw[<->,black,very thick,dashed] (axis cs:2.6701,0.0002)
+      -- (axis cs:3.1501,0.0002)
+      node[midway,above]{0.48};
 
 
 
