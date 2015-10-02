@@ -1,0 +1,55 @@
+\begin{tikzpicture}[scale=1.0]
+
+\begin{axis}[%scale=1.5,
+             domain=0:12.0,
+             restrict expr to domain={x}{0:12.0},
+             %restrict expr to domain={y}{1.0E-12:7},
+             xlabel={$E$ [eV]},
+%             xmin=0,
+%             xmax=1.5,
+             ymin=0,
+%             ymax=7,
+             %xtick={30,50,...,170},
+             %xticklabels={2,4,6,8,10,12,15,20,25},
+             %ytick={-1.0,-0.8,...,1.0},
+             %yticklabels={1.0,0.8,0.6,0.4,0.2,0.0,0.2,0.4,0.6,0.8,1.0},
+             ylabel={$\Gamma$ [eV]},
+             scale only axis,
+             width=\textwidth-1.5cm,
+             height=8cm,
+             %ybar stacked
+             axis line style = very thick,
+             tick style = very thick
+             ]
+
+ 
+\addplot+[ycomb,
+         mark=.,
+         ultra thick,
+         diplom2,
+         forget plot
+        ]
+        table[
+        x expr = \thisrowno{0},
+        y expr = \thisrowno{1}
+        ]
+        {../data/fcc_NeNe.dat};
+        \addlegendimage{line legend, diplom2, very thick};
+        \addlegendentry{fcc};
+
+%\addplot[
+%         mark=none,
+%         diplom2,
+%         ultra thick,
+%         %dotted
+%         ]
+%         table[
+%         x expr=\thisrowno{0},
+%         y expr=\thisrowno{1}
+%         ]
+%        {../data/xear_3_surf.dat_intadd.inp.sp};
+%         \addlegendentry{1 Xe, 55 Ar};
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{axis}
+\end{tikzpicture}
