@@ -35,21 +35,20 @@
         ]
         {../data/blue_NeNe.dat};
         \addlegendimage{line legend, blue, very thick};
-        \addlegendentry{set3 (blue)};
+        \addlegendentry{set 3 (blue)};
 
-%\addplot[
-%         mark=none,
-%         diplom2,
-%         ultra thick,
-%         %dotted
-%         ]
-%         table[
-%         x expr=\thisrowno{0},
-%         y expr=\thisrowno{1}
-%         ]
-%        {../data/xear_3_surf.dat_intadd.inp.sp};
-%         \addlegendentry{1 Xe, 55 Ar};
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\draw[thick] (axis cs:1.45,0.003) arc [radius=0.80cm,start angle=10,end angle=170];
+\node[pin={[pin distance=0.2cm]90:{\small across shells}}]
+     at (axis cs:1.1,0.0038) {};
+
+\draw[thick] (axis cs:2.00,0.0078) arc [radius=0.50cm,start angle=10,end angle=170];
+\node[pin={[pin distance=0.2cm]10:{\small same shell}}]
+     at (axis cs:2.0,0.0080) {};
+
+\draw[thick] (axis cs:2.90,0.0005) arc [radius=0.50cm,start angle=10,end angle=170];
+\node[pin={[pin distance=0.2cm]92:{\small across shells}}]
+     at (axis cs:2.70,0.0010) {};
+
 
 \end{axis}
 \end{tikzpicture}
