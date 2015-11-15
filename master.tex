@@ -1,7 +1,7 @@
 %\documentclass[aps,amssymb,preprint,a4paper]{revtex4}
 \documentclass[aps,amssymb,a4paper,twocolumn]{revtex4}
 
-%\usepackage[latin1]{inputenc}
+\usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[english]{babel}
 \usepackage{braket}
@@ -15,17 +15,19 @@
 \usepackage{xcolor}
 \usepackage{multirow}
 \usepackage{tikz,pgfplots}
-%\usepackage{}
+\usepackage{setspace}
 %\usepackage{}
 %\usepackage{}
 
 \usetikzlibrary{patterns,shadows,trees,calc}
 \usepgfplotslibrary{units}
 
-\pgfplotsset{compat=1.8}
+
+%\pgfplotsset{compat=1.8}
 
 \begin{document}
 
+%\setstretch{2.0}
 
 \newcommand{\wignerj}[6]{\mbox{$\left( \begin{array}{ccc} #1 & #2 & #3 \\ #4 & #5 & #6 \end{array} \right)$}}
 \newcommand{\redume}[3]{\mbox{$( #1 || #2 || #3 )$}}
@@ -37,7 +39,7 @@
 \definecolor{diplom2}{rgb}{0.0 0.0 0.6}
 \definecolor{diplom3}{RGB}{153,0,0} %unirot
 
-\title{Non-nearest Neighbour Interatomic Coulombic Decay}
+\title{Interatomic Coulombic Decay in Clusters: Non-nearest Neighbour Decay}
 
 \author{Elke Fasshauer}
 \email[]{Email:Elke.Fasshauer@uit.no}
