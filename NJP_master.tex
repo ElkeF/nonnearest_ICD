@@ -1,0 +1,89 @@
+%\documentclass[aps,amssymb,preprint,a4paper,dvips]{revtex4}
+\documentclass[12pt,twocolumn]{iopart}
+
+%\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{braket}
+\usepackage{epsfig}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{placeins}
+%\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{iopams}
+\usepackage{dsfont}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{units}
+%\usepackage{natbib}
+%\usepackage[dvipsnames]{pstricks}
+%\usepackage{pstricks,pstricks-add,pst-all}
+
+%Finde die Bilder
+%\graphicspath{{./pics/}} 
+
+% Alphabetic counting in footnotes
+\renewcommand{\thefootnote}{\alph{footnote}} 
+
+% Captions over full width
+
+%\usepackage{caption}
+%\captionsetup[figure]{format=plain, justification=raggedright, singlelinecheck=false, font=footnotesize, labelfont=bf}
+%\captionsetup[table]{position=top, format=plain, justification=raggedright, singlelinecheck=false, font=footnotesize, labelfont=bf}
+
+\begin{document}
+
+
+
+
+\setlength{\tabcolsep}{12pt}
+
+% Define some colour
+\definecolor{diplom1}{rgb}{0.0 0.4 1.0}
+\definecolor{diplom2}{rgb}{0.0 0.0 0.6}
+\definecolor{diplom3}{RGB}{153,0,0} %unirot
+
+\title[Non-nearest Neighbour ICD in Clusters]{Non-nearest Neighbour ICD in Clusters: A Way to Distinguish Icosahedral
+       and Cuboctahedral Clusters?}
+
+\author{E Fasshauer}
+\address{Centre for Theoretical and Computational Chemistry,
+         Department of Chemistry, University of Troms\o,
+         -- The Arctic University of Norway, N-9037 Troms\o, Norway}
+
+\eads{\mailto{elke.fasshauer@uit.no}}
+
+
+\date{\today}
+
+\begin{abstract}
+ \input{abstract}
+\end{abstract}
+
+\pacs{33.50.Hv, 33.70.Fd, 33.70.Jg, 34.80.Dp, 36.40.-c, 36.40.Mr}
+\submitto{New Journal of Physics}
+
+\maketitle
+
+
+\input{intro}
+\input{theory}
+\input{computational}
+\input{partners}
+\input{clusters}
+\input{summary}
+
+
+\input{ack}
+
+\eject
+\section*{References}
+\bibliographystyle{unsrt}
+\bibliography{theolit}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\end{document}

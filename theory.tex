@@ -1,8 +1,8 @@
 \section{Theoretical Background}
 \label{sec:theory}
 
-In roder to simulate the ICD electron spectra for a given cluster structure,
-the kinetic energies of the ICD electrons $E_{ICD}$ and the corresponding decay
+In order to simulate the ICD electron spectra for a given cluster structure,
+the kinetic energies of the ICD electrons $E_{ICD}$ and the corresponding
 decay widths of all pairs have to be determined. The ICD electron energies
 are given by the differences between the initial state and the final state
 energies $E_{in}$ and $E_{fin}$, respectively. The initial state energy
@@ -10,19 +10,19 @@ is given by the single ionization potential (SIP) of the sub-valence electron
 of the entire system
 and the final state energy is given by the double ionization potential (DIP).
 In the asymptotic limit, which is a reasonably good approximation for
-weakly bound systems, he initial state energy is approximated by the SIP
+weakly bound systems, the initial state energy is approximated by the SIP
 of the initially ionized unit $X_{in}$ and the final state energy can be
 approximated
 by the sum over the SIPs of the electron donating unit $X_D$ and the electron
 emitting unit $X_E$ ionized in the final state as well as the
 Coulomb repulsion between two point charges at the interatomic distance $R$
 
-\begin{align}
+\begin{eqnarray}
  E_{ICD}^\beta &= E_{in}^\beta - E_{fin}^\beta \label{equation:E_sec}\\
  E_{in}        &= SIP(X_{in}) \label{equation:E_in}\\          
  E_{fin}^\beta &= SIP(X_{D}^\beta) + SIP(X_{E}^\beta) + \frac 1R
            \label{equation:E_fin}                . 
-\end{align}
+\end{eqnarray}
 Here, $\beta$ denotes the selected decay channel.
 
 Following Wentzel \cite{Wentzel27}, Feshbach\cite{Feshbach58,Feshbach62}
@@ -38,7 +38,8 @@ the final continuum state of a particular decay channel $\beta$ is
 given by $\ket{\chi_{\beta}}$.
 Its challenging description involving both bound and continuum states can
 amongst others be achieved by the FanoADC-Stieltjes approach, where a
-subset of the $2h1p$ functions within the Algebraic Diagrammatic Construction
+subset of the  $2h1p$ (2-hole-1-particle) functions within the
+Algebraic Diagrammatic Construction
 (ADC) are used to mimic the final state function $\ket{\chi_{\beta}}$.
 By these means calculated discrete energies and corresponding transitions
 moments are then used to construct a continuous function, which is evaluated

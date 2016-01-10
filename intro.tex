@@ -1,13 +1,14 @@
 \section{Introduction}
 
 The Interatomic Coulombic Decay (ICD) is an electronic decay process of an atom or
-molecule (a unit) involving atoms or molecules of the environment. After an
-ionization from the sub-valence region of a unit $A$, the vacancy is filled
-by an electron of the same unit and the excess energy is transferred to a decay
-partner $B$, which subsequently get ionized:
+molecule (a unit $A$) involving atoms or molecules of the environment. After
+creation of a sub-outer-valence vacancy in $A$, this vacancy is filled
+by an electron of the same unit and the excess energy (often called the energy of
+a virtual photon $\omega_{vp}$) is transferred to a decay
+partner $B$, which subsequently gets ionized:
 
 \begin{equation*}
- A^+ + B \rightarrow A^+ + B^+ + e^-_{ICD}  .
+ A^{*+} + B \rightarrow A^+ + B^+ + e^-_{ICD}  .
 \end{equation*}
 
 In the final state,
@@ -15,11 +16,16 @@ the two units $A$ and $B$ are both positively charged, repell each other and
 thereby undergo a Coulomb explosion. This process was predicted theoretically
 \cite{Cederbaum97} and later proven experimentally \cite{Marburger03}. Since then
 it has been studied in a multitude of different systems such as small and large
-rare gas clusters \cite{many,Fasshauer14_1},
-clusters of small molecules \cite{},
-quantum dots \cite{Bande13}
-and proteins \cite{Harbach13}. Additionally it has given raise to
-the investigation of a whole zoo of ICD-like processes (see Ref.
+rare gas clusters \cite{Santra00_1,Santra01_1,Santra01_3,Ohrwall04,Averbukh06_1,
+Lundwall07,Jahnke10,Forstel13,Mucke15,Fasshauer14_1},
+clusters of small molecules \cite{Zobeley98,Pernpointner06,Mueller06,
+Kryzhevoi11_1,Ghosh13a},
+quantum dots \cite{Bande13}, proteins \cite{Harbach13}, it is expected
+to play a role in DNA damage in radiation therapy \cite{Alizadeh15}
+and may be used to destroy malign
+tissue \cite{Gokhberg14,Trinter14}. 
+Additionally it has given rise to
+the investigation of a manifold of ICD-like processes (see Ref.
 \cite{Hergenhahn11,Jahnke15}
 and references therein).
 
@@ -37,11 +43,13 @@ to the lifetime $\tau$ and proportional to the decay rate $\frac{1}{\tau}$.
 
 The ICD process was so far mostly discussed for the case of decay partners in
 the direct vicinity, because the decay widths with decay partners further away
-was considered to be negligible. Therefore, the decay was studied in clusters
-up to 13 neon atoms considering the initial ionization of only the central
-atom and not the other ones \cite{Santra01_3}. In this study, a higher than
+were considered to be negligible. Therefore, the decay was studied in clusters
+up to 13 neon atoms of equal interatomic distances considering the initial
+ionization of only the central
+atom and not the other ones \cite{Santra01_3}. The largest cluster had
+a cuboctahedral structure. In this study, a higher than
 linear dependence of the decay width on the number of neighbours was
-observed. A linear dependence would be expected for equally decay partners
+observed. A linear dependence would be expected for equal decay partners
 at equal distances from the initially ionized atom in the same environment.
 Since the decay width in the asymptotic limit shows an 
 $1/\omega^{4}_{vp}$-behaviour on the energy of the virtual photon, which
@@ -50,7 +58,8 @@ can be related to
 the better energetic stabilization of the doubly ionized
 final state in larger clusters \cite{Fasshauer13}.
 
-We showed that decay pathways with decay partners at larger distances need to
+It was shown in earlier studies \cite{Fasshauer13,Fasshauer14_1,Fasshauer16_1}
+that decay pathways with decay partners at larger distances need to
 be included for larger systems for two reasons:
 \begin{enumerate}
  \item In cluster structures more than one pair of units can consist of
@@ -62,8 +71,9 @@ be included for larger systems for two reasons:
        compared to other ones at similar distances. Therefore, peaks
        stemming from decays with distant decay partners can be visible
        in ICD spectra of clusters. \cite{Fasshauer14_1}
- \item The opening of ICD-like decay channels depend on the interatomic
-       distance. A channel being closed at the distance to the most direct
+ \item The opening of ICD-like decay channels depends on the interatomic
+       distance, which is characteristic for every atom pair.
+       A channel being closed at the distance to the most direct
        neighbours might be open for interaction partners at slightly
        larger distances. If this particular decay channel is more efficient
        than other decay channels being open for the decay with direct
@@ -73,11 +83,17 @@ be included for larger systems for two reasons:
        the Electron Transfer Mediated Decay (ETMD3) process in mixed ArXe
        clusters \cite{Fasshauer13,Fasshauer16_1}.
 \end{enumerate}
+
+Especially in the biological systems, in which ICD is discussed to play an
+important role \cite{Alizadeh15,Gokhberg14,Trinter14}
+the DNA is surrounded by multiple moving
+water molecules which can act as decay partners. Therefore, understanding the
+effect of non-nrearest neighbour decay will be crucial to study these systems.
 However, this feature of non-nearest neighbour ICD
 has so far not been addressed by itself and we will fill the gap in this
 paper.
 
-For a test system we choose rare gas clusters are. These are favourable
+For a test system we choose rare gas clusters. These are favourable
 for the investigation of basic features both
 from a theoretical and an experimental point of view. Their spherical
 symmetry and their very localized orbitals allow for an comparably easy
@@ -91,21 +107,20 @@ infinitely extended, yields the solid state face-centered-cubic (fcc) structure.
 In the solid state, every single atom is surrounded by twelve other atoms in the
 same distance. Surface atoms or even atoms at edges and vertices are rare
 compared to the number of atoms in the bulk. 
-These atoms being surrounded
 However, in small clusters most atoms are surface atoms and are therefore
 surrounded by less than the optimal 12 atoms.
-In the icosahedral cluster structure the interatomic distance between different
+In the icosahedral cluster structure the interatomic distances between different
 layers are shorter than between atoms of the same layer. 
 Therefore,
 this structure is favourable in small clusters with a large surface-to-bulk ratio.
 Together with the structure change from icosahedral to cuboctahedral
 the clusters' properties gradually change towards those of solids and
 conductivity as well as magnetizability can be observed. \cite{Benfield92}
-It is still unclear at which cluster size the favourable structures changes from
+It is still unclear at which cluster size the favourable structure changes from
 an icosahedral to an cuboctahedral structure. Numbers in the range
 of 800--3000 atoms have been reported. \cite{Hartke02,Pahl08}
-We propose to use the ICD to be a possible tool to differentiate between
-icosahedral and fcc cluster structures using the different distance
+We propose to use the ICD to be a possible tool to distinguish between
+icosahedral and cuboctahedral cluster structures using the different distance
 patterns in the cluster structures.
 
 We will
@@ -113,7 +128,7 @@ therefore first introduce the theoretical concepts in section \ref{sec:theory},
 present the computational details in section \ref{sec:computational},
 discuss the distance dependency of the ICD in general
 in section \ref{sec:partners} and then
-zoom in on the NeNe ICD part of the ICD spectra of NeAr clusters
+discuss the NeNe ICD part of the ICD spectra of NeAr clusters
 \cite{Fasshauer14_1} in section \ref{sec:near}. Here we will discuss the
 peaks and their origin in detail and thereby
 raise the question, what a \emph{nearest neighbour} is supposed to be. From

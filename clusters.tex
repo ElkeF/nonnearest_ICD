@@ -58,9 +58,9 @@ next shell \cite{Fasshauer14_1}.
 
 In the neon dimer several vibrational states of the ionized initial state are
 involved in the decay. \cite{Santra00_1} It has furthermore been shown, that
-the experimentally determined lifetime of $\tau_NeNe=\unit[150\pm 50]{fs}$
+the experimentally determined lifetime of $\tau_{NeNe}=\unit[150\pm 50]{fs}$
 \cite{Schnorr13} is only in agreement with those theoretical lifetime
-calculations that explicitely include nuclear dynamics of the intermediate state.
+calculations that explicitly include nuclear dynamics of the intermediate state.
 \cite{Schnorr15} However, the early lifetime measurements in neon clusters with
 a mean cluster size of $<N>=\unit[900]{atoms}$ show a lifetime of
 \unit[30]{fs} for surface atoms and \unit[6]{fs} for bulk atoms. This lifetime
@@ -80,8 +80,8 @@ ICD electron spectra of the NeAr clusters and analyze them in more detail.
 
 \begin{figure}[h]
  \centering
- \includegraphics[width=\columnwidth]{pics/rot.pdf}\\
- \includegraphics[width=\columnwidth]{pics/blue.pdf}
+ \includegraphics[width=0.7\columnwidth]{pics/rot.pdf}\\
+ \includegraphics[width=0.7\columnwidth]{pics/blue.pdf}
  \caption{ICD spectra for the NeNe-ICD part of the structures of set 3 and
           set 5 of the NeAr clusters in Ref. \cite{Fasshauer14_1}
           plotted as stick spectra.
@@ -90,7 +90,7 @@ ICD electron spectra of the NeAr clusters and analyze them in more detail.
           refer to nearest neighbours
           of different shells, the peak group \textbf{(b)} refers
           to nearest neighbours within one shell and the peak group \textbf{(c)}
-          refers to next nearest neighbours between different shells.
+          refers to next-nearest neighbours between adjacent shells.
           The other peaks contain both peaks stemming from
           pairs within the same shell as well as pairs consisting of atoms
           of different shells.}
@@ -104,14 +104,13 @@ Ref. \cite{Fasshauer14_1}. Both spectra exhibit a similar pattern of peak groups
 The groups are found around \unit[1.0]{eV} (group \textbf{(a)}),
 around \unit[1.7]{eV} (group \textbf{(b)}), around \unit[2.6]{eV}
 (group \textbf{(c)})
-and from \unit[3]{eV} to \unit[4]{eV}. By comparing
-the interatomic distances of which these peaks originate to their occurance
-in the cluster structures, the peak groups can be assigned to atom pairs
+and from \unit[3]{eV} to \unit[4]{eV}.
+The peak groups can be assigned to atom pairs
 within the cluster. For group \textbf{(a)} the peaks stem from decays
 between two nearest neighbour atoms of two different shells,
 while group \textbf{(b)}
 stems from the decay partners being nearest neighbours in the same shell.
-Group \textbf{(c)} can be assigned to next-nearest neighbours in adjacent shells
+Group \textbf{(c)} can be assigned to non-nearest neighbours in adjacent shells
 and the other peaks stem from a mixture of pairs which cannot unambigiously
 be categorized because different kinds of peaks intersect each other.
 
@@ -126,10 +125,11 @@ of this fine structure is unlikely in neon clusters.
 Concluding these findings, there is not neccessarily only one kind of nearest
 neighbours in clusters. Even the next-nearest neighbours are closer to
 twice the interatomic distance of the closest pair with an open decay channel.
-Therefore, as formerly supposed, decay partners of twice the closest interatomic
-distance indeed have a very small contribution to the total spectrum. However,
-all other decay partners do have to be taken into account in order to simulate
-an ICD spectrum of clusters.
+Therefore, also non-nearest decay partners need to be taken into account
+in order to simulate ICD spectra of clusters.
+It can be considered safe to neglect decay partners at sufficiently larger
+distances than twice the closest interatomic distance between decay partners
+with open channels.
 
 
 \subsection{Neon clusters: Icosahedral vs. Cuboctahedral Structure of Clusters}
@@ -139,7 +139,8 @@ idealized icosahedral and the other one has an idealized cuboctahedral structure
 They hence consist of 13 core and 42 surface atoms each. It was predicted
 theoretically and proven experimentally that the lifetimes of ionized bulk atoms
 is shorter than of ionized surface atoms due to the smaller number of direct
-neighbours of surface atoms. The experimentally determined lifetimes are
+neighbours of surface atoms. \cite{Santra01_3,Ohrwall04}
+The experimentally determined lifetimes are
 $\tau_{surf} = \unit[30]{fs}$ and $\tau_{bulk} = \unit[6\pm 1]{fs}$.
 For our \unit[55]{atom} cluster the decay widths and lifetimes are listed in
 Table \ref{table:lifetimes}.
@@ -165,15 +166,15 @@ Table \ref{table:lifetimes}.
 For both the icosahedral and the cuboctahedral cluster structures the lifetimes
 of the bulk atoms are in excellent agreement with experiment.
 However, the theoretical lifetimes of the surface atoms are significantly
-smaller than the experimental lifetime. Let us for a moment assume that the
-experimental lifetimes are correct. Then we have to consider three error sources:
-the nuclear motion excluded in out approach, the different cluster sizes,
-a different stabilization of charges between the
+smaller than the experimental lifetime. Assuming that the
+experimental lifetimes are correct, we have to consider three error sources:
+1. the nuclear motion excluded in our approach, 2. the different cluster sizes,
+and 3. a different stabilization of charges between the
 inner-valence ionized and the outer-valence ionized atom compared to the bulk.
 In small clusters, the number of face surface atoms is small compared to the
 number of edge and vertex atoms in the surface. The larger the clusters are,
 the larger is the relative number of the surface atoms. These surface atoms
-in face psoitions have more direct neighbours than atoms in vertex positions.
+in face positions have more direct neighbours than atoms in vertex positions.
 Therefore, our estimated lifetime of the average surface atoms in the small
 clusters should be slightly larger than in larger clusters. A pure structure
 effect does not explain the difference between the experimental and the
@@ -189,7 +190,8 @@ by
 \end{equation}
 
 If the stabilization difference of the inner-valence vacancy between the bulk
-and the surface atoms than the corresponding difference of the outer-valence
+and the surface atoms is larger than the corresponding difference of
+the outer-valence
 vacancy, the transferred energy is increased in case of the surface atoms
 ($\omega_{vp,surf} > \omega_{vp,bulk}$). As a consequence, the decay width
 is decreased and the lifetime is increased. Unfortunately, only the initial
@@ -197,9 +199,9 @@ state energy differences are to be found in the literature \cite{Ohrwall04}.
 Hence, a validation of this cause is currently not possible.
 
 
-Before discussing the ICD spectra shown in Figure \ref{figure:reinNe} of
-the icosahedral and cuboctahedral cluster
-structures, we would like to recall that clusters with an icosahedral structure
+Before discussing the ICD spectra  of the icosahedral and cuboctahedral
+cluster structures shown in Figure \ref{figure:reinNe}, we would like to
+recall that clusters with an icosahedral structure
 have shorter interatomic distances between shells than within the same
 shell.
 In terms of the ICD, different groups of nearest neighbours exist,
@@ -215,7 +217,8 @@ cuboctahedral clusters by the number of peaks, which can be seen in Figure
  \centering
  \includegraphics[width=\columnwidth]{pics/reinNe}
  \caption{ICD spectra of pure neon clusters consisting of 55 atoms in
-          icosahedral and fcc structure. In clusters with an ideal fcc structure
+          icosahedral and cuboctahedral structure. In clusters with an
+          ideal cuboctahedral structure
           all interatomic distances are the same and hence only one peak
           for each shell around any atom in the cluster is to be expected.
           In ideal icosahedral clusters the interatomic distances between atoms
@@ -235,11 +238,12 @@ broad ICD electron peak without an unambiguously assignable peak structure,
 whereas the later results show a main peak of ICD electrons and a smaller peak
 at slightly higher kinetic energies (at around \unit[3]{eV})
 that was not even assigned to be an ICD peak in the original work. This peak
-corresponds to the decay with non-nearest neighbours. However, a further peak
+corresponds to the decay with non-nearest neighbours in the adjacent shell.
+However, a further peak
 structure is not visible.
 
 Whether or not the cluster structures would be distinguishable in experiment
-will depend the vibrational broadening of the peaks, the experimental
+will depend on the vibrational broadening of the peaks, the experimental
 resolution and difference of the interatomic distances
 and hence the energy difference of the peaks in the spectrum of the
 icosahedral structure. In this proof-of-principle discussion

@@ -1,0 +1,19 @@
+#                 Gamma [eV]          lifetime [fs]
+# ico
+bulk to bulk      5.72927184E-02
+bulk to surf      6.77618533E-02
+surf to bulk      2.09739059E-02
+surf to surf      4.63811383E-02
+
+bulk              0.1250545717        5.263
+surf              0.0673550442        9.772
+
+
+# fcc
+bulk to bulk      6.34138808E-02
+bulk to surf      7.70682320E-02
+surf to bulk      2.38544531E-02
+surf to surf      5.42653017E-02
+
+bulk              0.1404821128        4.685
+surf              0.0781197548        8.426
