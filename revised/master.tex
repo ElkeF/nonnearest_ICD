@@ -1,0 +1,95 @@
+%\documentclass[aps,amssymb,preprint,a4paper]{revtex4}
+\documentclass[aps,amssymb,a4paper,twocolumn]{revtex4}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{braket}
+\usepackage{epsfig}
+\usepackage{graphicx}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{dsfont}
+\usepackage{booktabs}
+\usepackage{units}
+\usepackage{natbib}
+\usepackage{xcolor}
+\usepackage{multirow}
+\usepackage{tikz,pgfplots}
+\usepackage{setspace}
+%\usepackage{}
+%\usepackage{}
+
+\usetikzlibrary{patterns,shadows,trees,calc}
+\usepgfplotslibrary{units}
+
+
+%\pgfplotsset{compat=1.8}
+
+\begin{document}
+
+%\setstretch{2.0}
+
+\newcommand{\wignerj}[6]{\mbox{$\left( \begin{array}{ccc} #1 & #2 & #3 \\ #4 & #5 & #6 \end{array} \right)$}}
+\newcommand{\redume}[3]{\mbox{$( #1 || #2 || #3 )$}}
+
+\setlength{\tabcolsep}{12pt}
+
+% Define some colours
+\definecolor{diplom1}{rgb}{0.0 0.4 1.0}
+\definecolor{diplom2}{rgb}{0.0 0.0 0.6}
+\definecolor{diplom3}{RGB}{153,0,0} %unirot
+
+\title{Non-nearest Neighbour ICD in Clusters: A Way to Distinguish Icosahedral
+       and Cuboctahedral Clusters?}
+
+\author{Elke Fasshauer}
+\email[]{Email:Elke.Fasshauer@uit.no}
+
+
+\affiliation{Centre for Theoretical and Computational Chemistry,
+Department of Chemistry, University of Troms\o
+-- The Arctic University of Norway, N-9037 Troms\o, Norway}
+
+\date{\today}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                  Abstract                            %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{abstract}
+
+\maketitle
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Introduction
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{intro}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%  Theory
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{theory}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%  Computational Details
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{computational}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%  Results and discussion
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{partners}
+\input{clusters}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%  Conclusions
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{summary}
+\input{ack}
+
+%\clearpage
+
+\bibliographystyle{apsrev4-1}
+\bibliography{theolit}
+
+\end{document}

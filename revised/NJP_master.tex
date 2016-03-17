@@ -1,0 +1,384 @@
+%\documentclass[aps,amssymb,preprint,a4paper,dvips]{revtex4}
+\documentclass[12pt,twocolumn]{iopart}
+
+%\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{braket}
+\usepackage{epsfig}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{placeins}
+%\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{iopams}
+\usepackage{dsfont}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{units}
+%\usepackage{natbib}
+
+%Finde die Bilder
+%\graphicspath{{./pics/}} 
+
+% Alphabetic counting in footnotes
+\renewcommand{\thefootnote}{\alph{footnote}} 
+
+% Captions over full width
+
+%\usepackage{caption}
+%\captionsetup[figure]{format=plain, justification=raggedright, singlelinecheck=false, font=footnotesize, labelfont=bf}
+%\captionsetup[table]{position=top, format=plain, justification=raggedright, singlelinecheck=false, font=footnotesize, labelfont=bf}
+
+\begin{document}
+
+
+
+
+\setlength{\tabcolsep}{12pt}
+
+% Define some colour
+\definecolor{diplom1}{rgb}{0.0 0.4 1.0}
+\definecolor{diplom2}{rgb}{0.0 0.0 0.6}
+\definecolor{diplom3}{RGB}{153,0,0} %unirot
+
+%\title[Non-nearest Neighbour ICD in Clusters]{Non-nearest Neighbour ICD in Clusters: A Way to Distinguish Icosahedral
+%       and Cuboctahedral Clusters?}
+\title[Non-nearest Neighbour ICD in Clusters]{Non-nearest Neighbour ICD in
+       Clusters}
+
+\author{E Fasshauer}
+\address{Centre for Theoretical and Computational Chemistry,
+         Department of Chemistry, University of Troms\o,
+         -- The Arctic University of Norway, N-9037 Troms\o, Norway}
+
+\eads{\mailto{elke.fasshauer@uit.no}}
+
+
+\date{\today}
+
+\begin{abstract}
+ \input{abstract}
+\end{abstract}
+
+\pacs{33.50.Hv, 33.70.Fd, 33.70.Jg, 34.80.Dp, 36.40.-c, 36.40.Mr}
+\submitto{New Journal of Physics}
+
+\maketitle
+
+
+\input{intro}
+\input{theory}
+\input{computational}
+\input{partners}
+\input{clusters}
+\input{summary}
+
+
+\input{ack}
+
+\eject
+\section*{References}
+%\bibliographystyle{unsrt}
+%\bibliography{theolit}
+
+
+\begin{thebibliography}{10}
+
+\bibitem{Hergenhahn11}
+U.~Hergenhahn.
+\newblock {Interatomic and Intermolecular Coulombic Decay: The Early Years}.
+\newblock {\em J. Electron Spectrosc. Relat. Phenom.}, 184:78, 2011.
+
+\bibitem{Jahnke15}
+T.~Jahnke.
+\newblock {Interatomic and intermolecular Coulombic decay: the coming of age
+  story}.
+\newblock {\em J. Phys. B: Atomic, Molecular and Optical Physics}, 48:082001,
+  2015.
+
+\bibitem{Cederbaum97}
+L.~S. Cederbaum, J.~Zobeley, and F.~Tarantelli.
+\newblock {Giant Intermolecular Decay and Fragmentation of Clusters}.
+\newblock {\em Phys. Rev. Lett.}, 79(24):4778, 1997.
+
+\bibitem{Marburger03}
+S.~Marburger, O.~Kugeler, U.~Hergenhahn, and T.~M{\"o}ller.
+\newblock Experimental evidence for interatomic coulombic decay in ne clusters.
+\newblock {\em Phys. Rev. Lett.}, 90(20):203401, 2003.
+
+\bibitem{Ohrwall04}
+G.~{\"O}hrwall, M.~Tchaplyguine, M.~Lundwall, R.~Feifel, H.~Bergersen,
+  T.~Rander, A.~Lindblad, J.~Schulz, S.~Peredkov, S.~Barth, S.~Marburger,
+  U.~Hergenhahn, S.~Svensson, and O.~Bj{\"o}rneholm.
+\newblock {Femtosecond Interatomic Coulombic Decay in Free Neon Clusters: Large
+  Lifetime Differences between Surface and Bulk}.
+\newblock {\em Phys. Rev. Lett.}, 93(17):173401, 2004.
+
+\bibitem{Jahnke04}
+T.~Jahnke, A.~Czasch, M.~S. Sch{\"o}ffler, S.~Sch{\"o}ssler, A.~Knapp,
+  M.~K{\"a}sz, J.~Titze, C.~Wimmer, K.~Kreidi, R.~E. Grisenti, A.~Staudte,
+  O.~Jagutzki, U.~Hergenhahn, H.~Schmidt-B{\"o}cking, and R.~D{\"o}rner.
+\newblock Experimental observation of interatomic coulombic decay in neon
+  dimers.
+\newblock {\em Phys. Rev. Lett.}, 93(16):163401, 2004.
+
+\bibitem{Santra00_1}
+R.~Santra, J.~Zobeley, L.~S. Cederbaum, and N.~Moiseyev.
+\newblock {Interatomic Coulombic Decay in van der Waals Clusters and Impact of
+  Nuclear Motion}.
+\newblock {\em Phys. Rev. Lett.}, 85:4490, 2000.
+
+\bibitem{Santra01_1}
+R.~Santra, J.~Zobeley, L.~S. Cederbaum, and F.~Tarantelli.
+\newblock {Intermolecular Coulombic decay of clusters}.
+\newblock {\em J. Electron Spectrosc. Relat. Phenom.}, 114--116:41, 2001.
+
+\bibitem{Santra01_3}
+R.~Santra, J.~Zobeley, and L.~S. Cederbaum.
+\newblock {Electronic decay of valence holes in clusters and condensed matter}.
+\newblock {\em Phys. Rev. B}, 64(24):245104, 2001.
+
+\bibitem{Averbukh06_1}
+V.~Averbukh and L.~S. Cederbaum.
+\newblock {Calculation of interatomic decay widths of vacancy states
+  delocalized due to inversion symmetry}.
+\newblock {\em J. Chem. Phys.}, 125:094107, 2006.
+
+\bibitem{Lundwall07}
+M.~Lundwall, W.~Pokapanich, H.~Bergersen, A.~Lindblad, T.~Rander, G.~\"Ohrwall,
+  M.~Tchaplyguine, S.~Barth, U.~Hergenhahn, S.~Svensson, and O.~Bj\"orneholm.
+\newblock Self-assembled heterogeneous argon/neon core-shell clusters studied
+  by photoelectron spectroscopy.
+\newblock {\em J. Chem. Phys.}, 126:214706, 2007.
+
+\bibitem{Jahnke10}
+T.~Jahnke, H.~Sann, T.~Havermeier, K.~Kreidi, C.~Stuck, M.~Meckel,
+  M.~Sch{\"o}ffler, N.~Neumann, R.~Wallauer, S.~Voss, A.~Czasch, O.~Jagutzki,
+  A.~Malakzadeh, F.~Afaneh, Th. Weber, H.~Schmidt-B{\"o}cking, and
+  R.~D{\"o}rner.
+\newblock {Ultrafast energy transfer between water molecules}.
+\newblock {\em Nature Physics}, 6:139, 2010.
+
+\bibitem{Forstel13}
+M.~F{\"o}rstel, T.~Arion, and U.~Hergenhahn.
+\newblock {Measuring the efficiency of interatomic Coulombic decay in Ne
+  clusters}.
+\newblock {\em J. Electron Spectrosc. Relat. Phenom.}, 191:16, 2013.
+
+\bibitem{Mucke15}
+M.~Mucke, T.~Arion, M.~F{\"o}rstel, T.~Lischke, and U.~Hergenhahn.
+\newblock {Competition of inelastic electron scattering and Interatomic
+  Coulombic Decay in Ne clusters}.
+\newblock {\em J. Electron Spectrosc. Relat. Phenom.}, 200:232, 2015.
+
+\bibitem{Fasshauer14_1}
+E.~Fasshauer, M.~F\"orstel, S.~Pallmann, M.~Pernpointner, and U.~Hergenhahn.
+\newblock Using icd for structure analysis of clusters: a case study on
+  coexpanded ne-ar clusters.
+\newblock {\em New J. Phys.}, 16:103026, 2014.
+
+\bibitem{Zobeley98}
+J.~Zobeley, L.~S. Cederbaum, and F.~Tarantelli.
+\newblock Highly excited electronic states of molecular clusters and their
+  decay.
+\newblock {\em J. Chem. Phys.}, 108(23):9737, 1998.
+
+\bibitem{Pernpointner06}
+M.~Pernpointner, S.~Knecht, and L.~S. Cederbaum.
+\newblock {Ionization spectra and electronic decay in small iodide clusters:
+  Fully relativistic results}.
+\newblock {\em J. Chem. Phys.}, 125:034309, 2006.
+
+\bibitem{Mueller06}
+I.~B. M{\"u}ller and L.~S. Cederbaum.
+\newblock {Ionization and double ionization of small water clusters}.
+\newblock {\em J. Chem. Phys.}, 125:204305, 2006.
+
+\bibitem{Kryzhevoi11_1}
+N.~V. Kryzhevoi and L.~S. Cederbaum.
+\newblock {Using pH Value To Control Intermolecular Electronic Decay}.
+\newblock {\em Angew. Chem. Int. Ed.}, 50:1306, 2011.
+
+\bibitem{Ghosh13a}
+A.~Ghosh, S.~Pal, and N.~Vaval.
+\newblock {Study of interatomic Coulombic decay of Ne(H2O)n (n=1,3) clusters
+  using equation-of-motion coupled-cluster method}.
+\newblock {\em J. Chem. Phys.}, 139:064112, 2013.
+
+\bibitem{Bande13}
+A.~Bande.
+\newblock Electron dynamics of interatomic coulombic decay in quantum dots
+  induced by a laser field.
+\newblock {\em J. Chem. Phys.}, 138:214104, 2013.
+
+\bibitem{Harbach13}
+P.~H.~P. Harbach, M.~Schneider, S.~Faraji, and A.~Dreuw.
+\newblock Intermolecular coulombic decay in biology: the initial electron
+  detachment from fadh- in dna photolyases.
+\newblock {\em J. Phys. Chem. Lett.}, 4:943, 2013.
+
+\bibitem{Alizadeh15}
+E.~Alizadeh, T.~M. Orlando, and L.~Sanche.
+\newblock {Biomolecular Damage Induced by Ionizing Radiation: The Direct and
+  Indirect Effects of Low-Energy Electrons on DNA}.
+\newblock {\em Annu. Rev. Phys. Chem.}, 66:379, 2015.
+
+\bibitem{Gokhberg14}
+K.~Gokhberg, P.~Koloren\v{c}, A.~I. Kuleff, and L.~S. Cederbaum.
+\newblock {Site- and energy-selective slow-electron production through
+  intermolecular Coulombic decay}.
+\newblock {\em Nature}, 505:661, 2014.
+
+\bibitem{Trinter14}
+F.~Trinter, M.~S. Sch{\"o}ffler, H.~K. Kim, F.~P. Sturm, K.~Cole, N.~Neumann,
+  A.~Vredenborg, J.~Williams, I.~Bocharova, R.~Guillemin, M.~Simon,
+  A.~Belkacem, A.~L. Landers, Th. Weber, H.~Schmidt-B{\"o}cking, R.~D{\"o}rner,
+  and Jahnke T.
+\newblock {Resonant Auger decay driving intermolecular Coulombic decay in
+  molecular dimers}.
+\newblock {\em Nature}, 505:664, 2014.
+
+\bibitem{Fasshauer13}
+E.~Fasshauer, M.~Pernpointner, and K.~Gokhberg.
+\newblock Interatomic decay of inner-valence ionized states in arxe clusters:
+  Relativistic approach.
+\newblock {\em J. Chem. Phys.}, 138:014305, 2013.
+
+\bibitem{kryzhevoi2007}
+N.~V. Kryzhevoi, V.~Averbukh, and L.~S. Cederbaum.
+\newblock High activity of helium droplets following ionisation of systems
+  inside those droplets.
+\newblock {\em Phys. Rev. B}, 76:094513, 2007.
+
+\bibitem{Fasshauer16_1}
+E.~Fasshauer, M.~F\"orstel, M.~M\"ucke, M.~Pernpointner, and U.~Hergenhahn.
+\newblock in preparation.
+
+\bibitem{Hagena72}
+O.~F. Hagena and W.~Obert.
+\newblock Cluster formation in expanding supersonic jets: Effect of pressure,
+  temperature, nozzle size, and test gas.
+\newblock {\em The Journal of Chemical Physics}, 56(5):1793--1802, 1972.
+
+\bibitem{Hagena81}
+O.~F. Hagena.
+\newblock Nucleation and growth of clusters in expanding nozzle flows.
+\newblock {\em Surf. Sci.}, 106:101, 1981.
+
+\bibitem{Hagena87}
+O.~F. Hagena.
+\newblock Condensation in free jets: Comparison of rare gases and metals.
+\newblock {\em Z. Phys. D}, 4:291, 1987.
+
+\bibitem{Benfield92}
+R.~E. Benfield.
+\newblock Mean coordination numbers and the non-metal-metal transition in
+  clusters.
+\newblock {\em J. Chem. Soc. Faraday Trans.}, 88:1107, 1992.
+
+\bibitem{Hartke02}
+B.~Hartke.
+\newblock Structural transitions in clusters.
+\newblock {\em Angew. Chem. Int. Ed.}, 41:1468, 2002.
+
+\bibitem{Pahl08}
+E.~Pahl, F.~Calvo, L.~Ko\v{c}i, and P.~Schwerdtfeger.
+\newblock Accurate melting temperatures for neon and argon from ab initio monte
+  carlo simulations.
+\newblock {\em Angew. Chem. Int. Ed.}, 47:8207, 2008.
+
+\bibitem{Wentzel27}
+G.~Wentzel.
+\newblock {\"U}ber strahlungslose quantenspr{\"u}nge.
+\newblock {\em Z. Physik}, 43:524, 1927.
+
+\bibitem{Feshbach58}
+H.~Feshbach.
+\newblock Unified theory of nuclear reactions.
+\newblock {\em Ann. Phys.}, 5:357, 1958.
+
+\bibitem{Feshbach62}
+H.~Feshbach.
+\newblock A unified theory of nuclear reactions. ii.
+\newblock {\em Ann. Phys.}, 19:287, 1962.
+
+\bibitem{Fano61}
+U.~Fano.
+\newblock Effects of configuration interaction on intensities and phase shifts.
+\newblock {\em Phys. Rev.}, 124(6):1866--1878, Dec 1961.
+
+\bibitem{Averbukh05}
+V.~Averbukh and L.~S. Cederbaum.
+\newblock Ab initio calculation of interatomic decay rates by a combination of
+  the fano ansatz, green's-function methods, and the stieltjes imaging
+  technique.
+\newblock {\em J. Chem. Phys.}, 123:204107, 2005.
+
+\bibitem{Fasshauer15_1}
+E.~Fasshauer, P.~Koloren\ifmmode~\check{c}\else \v{c}\fi{}, and
+  M.~Pernpointner.
+\newblock Relativistic decay widths of autoionization processes: The
+  relativistic fanoadc-stieltjes method.
+\newblock {\em J. Chem. Phys.}, 142:144106, 2015.
+
+\bibitem{Bondi64}
+A.~Bondi.
+\newblock van der waals volumes and radii.
+\newblock {\em J. Phys. Chem.}, 68:441, 1964.
+
+\bibitem{HARDRoC}
+{HARDRoC}, Hunting Asymptotic Relativistic Decay Rates of Clusters (2013),
+  written by E.~Fasshauer (see
+  http://www.pci.uni-heidelberg.de/tc/usr/elke/hardroc/html/main.html).
+
+\bibitem{Fasshauer_thesis}
+E.~Fasshauer.
+\newblock {\em Investigation of Relativistic Effects in Electronic Decay
+  Processes in Small and Large Noble Gas Clusters by Ab Initio and New
+  Simulation Approaches}.
+\newblock PhD thesis, University of Heidelberg, 2014.
+
+\bibitem{Scheit06}
+S.~Scheit, V.~Averbukh, H.-D. Meyer, J.~Zobeley, and L.~S. Cederbaum.
+\newblock {Interatomic Coulombic decay in a heteroatomic rare gas cluster}.
+\newblock {\em J. Chem. Phys.}, 124:154305, 2006.
+
+\bibitem{OKeeffe14}
+P.~O'Keeffe, A.~Ciavardini, E.~Ripani, P.~Bolognesi, M.~Coreno, L.~Avaldi,
+  M.~Devetta, M.~Di~Fraia, C.~Callegari, K.~C. Prince, and R.~Richter.
+\newblock {Experimental investigation of the interatomic Coulombic decay in
+  NeAr dimers}.
+\newblock {\em Phys. Rev. A}, 90:042508, 2014.
+
+\bibitem{Schnorr13}
+K.~Schnorr, A.~Senftleben, M.~Kurka, A.~Rudenko, L.~Foucar, G.~Schmid,
+  A.~Broska, T.~Pfeifer, K.~Meyer, D.~Anielski, R.~Boll, D.~Rolles,
+  M.~K{\"u}bel, M.~F. Kling, Y.~H. Jiang, S.~Mondal, T.~Tachibana, K.~Ueda,
+  T.~Marchenko, M.~Simon, G.~Brenner, R.~Treusch, S.~Scheit, V.~Averbukh,
+  J.~Ullrich, C.~D. Schr{\"o}ter, and R.~Moshammer.
+\newblock {Time-Resolved Measurement of Interatomic Coulombic Decay in Ne$_2$}.
+\newblock {\em Phys. Rev. Lett.}, 111:093402, 2013.
+
+\bibitem{Schnorr15}
+K.~Schnorr, A.~Senftleben, G.~Schmid, S.~Augustin, M.~Kurka, A.~Rudenko,
+  L.~Foucar, A.~Broska, K.~Meyer, D.~Anielski, D.~Anielski, R.~Boll, D.~Rolles,
+  M.~K{\"u}bel, M.~F. Kling, Y.~H. Jiang, S.~Mondal, T.~Tachibana, K.~Ueda,
+  T.~Marchenko, M.~Simon, G.~Brenner, R.~Treusch, S.~Scheit, V.~Averbukh,
+  J.~Ullrich, T.~Pfeifer, C.~D. Schr{\"o}ter, and R.~Moshammer.
+\newblock {Time-resolved study of ICD in Ne dimers using FEL radiation}.
+\newblock {\em J. Electron Spectrosc. Relat. Phenom.}, 204:245, 2015.
+
+\bibitem{Barth06_2}
+S.~Barth, S.~Marburger, O.~Kugeler, V.~Ulrich, S.~Joshi, A.~M. Bradshaw, and
+  U.~Hergenhahn.
+\newblock {The efficiency of Interatomic Coulombic Decay in Ne clusters}.
+\newblock {\em Chem. Phys.}, 329:246, 2006.
+
+\end{thebibliography}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\end{document}
