@@ -11,8 +11,8 @@
 %             ymax=7,
              %xtick={30,50,...,170},
              %xticklabels={2,4,6,8,10,12,15,20,25},
-             ytick={0.0,0.02,...,0.12},
-             yticklabels={0.0,0.02,0.04,0.06,0.08,0.10,0.12},
+             %ytick={-1.0,-0.8,...,1.0},
+             %yticklabels={1.0,0.8,0.6,0.4,0.2,0.0,0.2,0.4,0.6,0.8,1.0},
              ylabel={$\Gamma$ [eV]},
              scale only axis,
              width=\textwidth-1.5cm,
@@ -33,7 +33,7 @@
         x expr = \thisrowno{0},
         y expr = \thisrowno{1}
         ]
-        {../data/fcc_reinNe.dat};
+        {../data/923_fcc-ICD};
         \addlegendimage{line legend, diplom1, very thick};
         \addlegendentry{cuboctahedral};
 
@@ -48,7 +48,7 @@
          x expr=\thisrowno{0},
          y expr=\thisrowno{1}
          ]
-        {../data/fcc-ICD.sp};
+        {../data/923_fcc-ICD.sp};
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -62,7 +62,7 @@
         x expr = \thisrowno{0},
         y expr = \thisrowno{1}
         ]
-        {../data/ico_reinNe.dat};
+        {../data/923_ico-ICD};
         \addlegendimage{line legend, diplom2, very thick};
         \addlegendentry{icosahedral};
 
@@ -77,7 +77,7 @@
          x expr=\thisrowno{0},
          y expr=\thisrowno{1}
          ]
-        {../data/ico-ICD.sp};
+        {../data/923_ico-ICD.sp};
  
 %\addplot[
 %         mark=none,

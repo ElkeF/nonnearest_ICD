@@ -3,8 +3,8 @@
 The cluster structures used were constructed to have an ideal icosahedral or
 face-centered-cubic geometry with optional additional incomplete outermost
 shells. These are based on the van der Waals radii for neon
-$r_{Ne}=\unit[1.54]{\AA}$
-and argon $r_{Ar}=\unit[1.88]{\AA}$ \cite{Bondi64}.
+$r_{Ne}=$ \unit[1.54]{\AA}
+and argon $r_{Ar}=$ \unit[1.88]{\AA} \cite{Bondi64}.
 In case of the NeAr clusters two of those
 cluster structures from Ref. \cite{Fasshauer14_1}, where the theoretical
 and experimental argon content in the cluster,
@@ -39,9 +39,13 @@ triangular surfaces additionally covered by neon atoms.
 \end{table}
 
 
-The calculations to obtain the ICD electron spectra of those cluster
+The calculations to obtain the ICD electron spectra of all cluster
 structures were performed with
-the program HARDRoC \cite{HARDRoC} using experimental ionization energies shown
+the program HARDRoC \cite{HARDRoC} based on the decomposition of the cluster into
+pairs. Every pair with the same distance is treated equally. This includes the
+assumption that every neon atom is ionized with the same probability.
+\cite{Fasshauer14_1,Fasshauer_thesis}
+It uses experimental ionization energies shown
 in Table \ref{table:exp_input} and curves fitted to the decay width of the
 NeNe ICD of Ref. \cite{Averbukh06_1} and the NeAr decay widths of Ref.
 \cite{Fasshauer14_1}. These fitted curves yield lifetimes

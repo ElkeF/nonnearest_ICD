@@ -22,6 +22,20 @@
              tick style = very thick
              ]
 
+\draw [gray, dashed, very thick] (axis cs:\pgfkeysvalueof{/pgfplots/xmin},0.7501)
+      -- (axis cs:\pgfkeysvalueof{/pgfplots/xmax},0.7501);
+\draw [gray, dashed, very thick] (axis cs:\pgfkeysvalueof{/pgfplots/xmin},1.9501)
+      -- (axis cs:\pgfkeysvalueof{/pgfplots/xmax},1.9501);
+\draw [gray, dashed, very thick] (axis cs:\pgfkeysvalueof{/pgfplots/xmin},2.6701)
+      -- (axis cs:\pgfkeysvalueof{/pgfplots/xmax},2.6701);
+\draw [gray, dashed, very thick] (axis cs:\pgfkeysvalueof{/pgfplots/xmin},3.1501)
+      -- (axis cs:\pgfkeysvalueof{/pgfplots/xmax},3.1501);
+\draw [gray, dashed, very thick] (axis cs:\pgfkeysvalueof{/pgfplots/xmin},3.4929)
+      -- (axis cs:\pgfkeysvalueof{/pgfplots/xmax},3.4929);
+\draw [gray, dashed, very thick] (axis cs:\pgfkeysvalueof{/pgfplots/xmin},3.7500)
+      -- (axis cs:\pgfkeysvalueof{/pgfplots/xmax},3.7500);
+\draw [gray, dashed, very thick] (axis cs:\pgfkeysvalueof{/pgfplots/xmin},3.9500)
+      -- (axis cs:\pgfkeysvalueof{/pgfplots/xmax},3.9500);
  
 \addplot+[ycomb,
          mark=.,
@@ -51,18 +65,7 @@
         \addlegendimage{line legend, diplom1, very thick};
         \addlegendentry{$E \propto 1/R$};
 
-%\addplot[
-%         mark=none,
-%         diplom2,
-%         ultra thick,
-%         %dotted
-%         ]
-%         table[
-%         x expr=\thisrowno{0},
-%         y expr=\thisrowno{1}
-%         ]
-%        {../data/xear_3_surf.dat_intadd.inp.sp};
-%         \addlegendentry{1 Xe, 55 Ar};
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \end{axis}

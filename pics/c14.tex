@@ -1,0 +1,65 @@
+\begin{tikzpicture}[scale=1.0]
+
+\begin{axis}[%scale=1.5,
+             domain=0:12.0,
+             restrict expr to domain={x}{0:12.0},
+             %restrict expr to domain={y}{1.0E-12:7},
+             xlabel={$E$ [eV]},
+%             xmin=0,
+             xmax=6.0,
+             ymin=0,
+%             ymax=7,
+             %xtick={30,50,...,170},
+             %xticklabels={2,4,6,8,10,12,15,20,25},
+             %ytick={0.0,0.02,...,0.12},
+             %yticklabels={0.0,0.02,0.04,0.06,0.08,0.10,0.12},
+             %xmode = log,
+             ymode=log,
+             log origin=infty,
+             ylabel={$\Gamma$ [eV]},
+             scale only axis,
+             width=\textwidth-1.5cm,
+             height=8cm,
+             %ybar stacked
+             axis line style = very thick,
+             tick style = very thick
+             ]
+
+ 
+\addplot[
+         very thick,
+         gray,
+        ]
+        {0.10 / x^4};
+        \addlegendentry{$0.1  E^{-4}$}
+
+\addplot+[ycomb,
+         mark=.,
+         ultra thick,
+         diplom1,
+         forget plot
+        ]
+        table[
+        x expr = \thisrowno{0},
+        y expr = \thisrowno{1}
+        ]
+        {../data/fcc/c14-ICD};
+        \addlegendimage{line legend, diplom1, very thick};
+        \addlegendentry{$c = 14$};
+
+%\addplot[
+%         mark=none,
+%         diplom1,
+%         very thick,
+%         forget plot
+%         %dotted
+%         ]
+%         table[
+%         x expr=\thisrowno{0},
+%         y expr=\thisrowno{1}
+%         ]
+%        {../data/fcc/c14-ICD.sp};
+
+
+\end{axis}
+\end{tikzpicture}

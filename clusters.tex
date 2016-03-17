@@ -72,9 +72,9 @@ usually leads to several bond elongations. Therefore, we consider the influence
 of nuclear dynamics on the lifetime to be sufficiently small to be able to
 neglect them in clusters in a first description.
 \cite{Santra01_3,Ohrwall04}
-However, in clusters the nuclear
-motion might not be fast enough to play a role due to the manifold of
-decay partners and the resulting shortening of the lifetime.
+%However, in clusters the nuclear
+%motion might not be fast enough to play a role due to the manifold of
+%decay partners and the resulting shortening of the lifetime.
 In the following, we will focus on the NeNe-ICD part of the
 ICD electron spectra of the NeAr clusters and analyze them in more detail.
 
@@ -93,7 +93,10 @@ ICD electron spectra of the NeAr clusters and analyze them in more detail.
           refers to next-nearest neighbours between adjacent shells.
           The other peaks contain both peaks stemming from
           pairs within the same shell as well as pairs consisting of atoms
-          of different shells.}
+          of different shells. In this representation the contribution of the
+          peaks around \unit[3]{eV} is easily underestimated. After folding the
+          spectrum with many close lying small peaks they will add up to yield
+          a visible peak or shoulder (compare Ref. \cite{Fasshauer14_1}).}
  \label{figure:rot_blue}
 \end{figure}
 
@@ -134,51 +137,80 @@ with open channels.
 
 \subsection{Neon clusters: Icosahedral vs. Cuboctahedral Structure of Clusters}
 \label{sec:icofcc}
-We study two cluster structures of \unit[55]{atoms} each, where one has an
-idealized icosahedral and the other one has an idealized cuboctahedral structure.
-They hence consist of 13 core and 42 surface atoms each. It was predicted
+We study two cluster structures (shown in Figure \ref{figure:Ne_clusters}),
+where one has an
+idealized icosahedral and the other one has an idealized cuboctahedral structure
+for clusters of both \unit[55]{atoms} and \unit[923]{atoms}.
+They hence consist of 13 (561) core and 42 (362) surface atoms.
+
+\begin{figure}[h]
+ \centering
+ \includegraphics[height=4cm]{pics/fcc.png}
+ \hspace{2cm}
+ \includegraphics[height=4cm]{pics/ico.png}
+ \caption{Cluster structures of the \unit[55]{atom} Ne clusters with
+          cuboctahedral structure (left) and icosahedral structure (right).}
+ \label{figure:Ne_clusters}
+\end{figure}
+
+It was predicted
 theoretically and proven experimentally that the lifetimes of ionized bulk atoms
 is shorter than of ionized surface atoms due to the smaller number of direct
 neighbours of surface atoms. \cite{Santra01_3,Ohrwall04}
 The experimentally determined lifetimes are
 $\tau_{surf} = \unit[30]{fs}$ and $\tau_{bulk} = \unit[6\pm 1]{fs}$.
-For our \unit[55]{atom} cluster the decay widths and lifetimes are listed in
-Table \ref{table:lifetimes}.
+\cite{Ohrwall04}
+For our \unit[55]{atom} and \unit[923]{atom} cluster the decay widths and lifetimes
+are listed in Table \ref{table:lifetimes}.
 
 \begin{table}[h]
  \centering
  \caption{Calculated decay widths and lifetimes of bulk and surface atoms
-          for icosahedral and cuboctahedral clusters of 55 atoms.}
- \begin{tabular}{llrr}
+          for icosahedral and cuboctahedral clusters of 55 and 923 atoms.}
+ \begin{tabular}{llrrr}
   \toprule
-               &                            & $\Gamma$ [meV] & $\tau$ [fs]\\
+               &                            & atoms & $\Gamma$ [meV] & $\tau$ [fs]\\
   \midrule
-   \multirow{2}{*}{icosahedral}   & bulk    & 125            & 5.3 \\
-                                  & surface &  67            & 9.8 \\
+   \multirow{4}{*}{icosahedral}   & bulk    &   55  &   125          & 5.3 \\
+                                  & surface &   55  &    67          & 9.8 \\
+                                  & bulk    &  923  &   126          & 5.2 \\
+                                  & surface &  923  &    81          & 8.1 \\
   \midrule
-   \multirow{2}{*}{cuboctahedral} & bulk    & 140            & 4.7 \\
-                                  & surface &  78            & 8.4 \\
+   \multirow{4}{*}{cuboctahedral} & bulk    &   55  &   140          & 4.7 \\
+                                  & surface &   55  &    78          & 8.4 \\
+                                  & bulk    &  923  &   147          & 4.5 \\
+                                  & surface &  923  &    95          & 7.0 \\
   \bottomrule
  \end{tabular}
  \label{table:lifetimes}
 \end{table}
+
+In all cases, our results confirm the shorter lifetimes of the bulk atoms compared
+to the surface atoms. Both for the icosahedral and for the cuboctahedral cluster
+structure the lifetime of the bulk atoms is almost independent of the cluster size
+and the difference is maximum \unit[0.2]{fs}. This can be explained by the very
+similar environments of bulk atoms in smaller and larger clusters.
+The lifetimes of the surface atoms however are smaller for the larger cluster sizes.
+In small clusters, the number of face surface atoms is small compared to the
+number of edge and vertex atoms in the surface. The larger the clusters are,
+the larger is the relative number of the surface atoms. These surface atoms
+in face positions have more direct neighbours than atoms in vertex positions.
+Therefore, our estimated lifetime of the average surface atoms in the small
+clusters should be slightly larger than in larger clusters.
 
 For both the icosahedral and the cuboctahedral cluster structures the lifetimes
 of the bulk atoms are in excellent agreement with experiment.
 However, the theoretical lifetimes of the surface atoms are significantly
 smaller than the experimental lifetime. Assuming that the
 experimental lifetimes are correct, we have to consider three error sources:
-1. the nuclear motion excluded in our approach, 2. the different cluster sizes,
+1. the nuclear motion excluded in our approach, 2. different cluster structures,
 and 3. a different stabilization of charges between the
 inner-valence ionized and the outer-valence ionized atom compared to the bulk.
-In small clusters, the number of face surface atoms is small compared to the
-number of edge and vertex atoms in the surface. The larger the clusters are,
-the larger is the relative number of the surface atoms. These surface atoms
-in face positions have more direct neighbours than atoms in vertex positions.
-Therefore, our estimated lifetime of the average surface atoms in the small
-clusters should be slightly larger than in larger clusters. A pure structure
-effect does not explain the difference between the experimental and the
-theoretical results.
+
+Cluster structures with larger interatomic distances of the surface atoms between
+each other and the core atoms would explain the higher experimental lifetimes of
+the surface atoms. These could be caused by non-ideal structures due to the
+clusters' temperature.
 
 It remains to discuss the influence of the different charge stabilizations of
 inner- and outer-valence vacancies. The decay width is proportional to
@@ -230,10 +262,10 @@ cuboctahedral clusters by the number of peaks, which can be seen in Figure
 \end{figure}
 
 Two experimental ICD electron spectra of clusters
-with a mean cluster size $<N>$ between 47 and 512 atoms
+with a mean cluster size $<N>$ of 70 and 209 atoms
 are available in the literature.
 \cite{Marburger03,Barth06_2} 
-The first experimental spectrum shows a very
+The first experimental spectrum for clusters with $<N>=70$ shows a very
 broad ICD electron peak without an unambiguously assignable peak structure,
 whereas the later results show a main peak of ICD electrons and a smaller peak
 at slightly higher kinetic energies (at around \unit[3]{eV})
